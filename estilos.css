@@ -392,3 +392,18 @@ Solucion dad Por Chagtp*/
         font-size: 16px;
     }
 }
+
+
+.ad-left{
+position:fixed;
+bottom:20px;
+left:20px;
+z-index:9999;
+}
+
+.ad-right{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:9999;
+}
