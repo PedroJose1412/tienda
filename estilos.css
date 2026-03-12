@@ -1,0 +1,464 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ===== CONTENEDOR ===== */
+
+.contenedor {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* ===== IMAGEN ===== */
+
+.imagen {
+    flex: 1 1 400px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Logo*/
+
+.logo img{
+height:60px;
+width:auto;
+display:block;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+
+
+.imagen img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* ===== INFO ===== */
+
+.info {
+    flex: 1 1 500px;
+    padding: 40px;
+}
+
+.info h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+/* ===== PRECIO ===== */
+
+.precio {
+    font-size: 26px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+
+.descripcion {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== CARACTERÍSTICAS ===== */
+
+.caracteristicas {
+    margin-top: 20px;
+}
+
+.caracteristicas li {
+    margin-bottom: 8px;
+}
+
+/* ===== BOTÓN ===== */
+
+.btn-comprar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #218838;
+}
+
+/* ===== RESPONSIVE REAL ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .imagen {
+        padding: 20px;
+    }
+
+    .info {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .info h3 {
+        font-size: 22px;
+    }
+
+    .precio {
+        font-size: 22px;
+    }
+
+    .caracteristicas {
+        text-align: center;
+        display: inline-block;
+    }
+
+}
+
+
+
+/*
+Solucion dad Por Chagtp*/
+
+/* ===== FOOTER BASE ===== */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer .link {
+    flex: 1 1 200px;
+}
+
+.footer .link h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer .link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .link li {
+    margin-bottom: 8px;
+}
+
+.footer .link a {
+    text-decoration: none;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.footer .link a:hover {
+    color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer .link {
+        flex: 1 1 100%;
+    }
+
+}
+
+
+/*Otra Solucion*/
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* TITULO PRINCIPAL */
+.header h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* SUBTITULO */
+.header p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BOTON */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------- */
+/* RESPONSIVE MOVIL */
+/* ------------------- */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 60px 15px;
+    }
+
+    .header h1 {
+        font-size: 36px; /* mucho más proporcionado */
+        line-height: 1.1;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+/* texto no central*/
+
+
+
+
+.product-card {
+    text-align: center;
+}
+
+
+/*Ola*/
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Producto Responsibe*/
+
+/* ===== CONTENEDOR PRODUCTOS ===== */
+
+.productos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-productos{
+    width: 100%;
+    max-width: 1200px;   /* controla el ancho máximo */
+    margin: 0 auto;      /* centra horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ===== TARJETAS ===== */
+
+.card{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h4{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.card .button{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card .button:hover{
+    background: #333;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 992px){
+    .contenedor-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 576px){
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        padding: 12px;
+    }
+
+    .card h4{
+        font-size: 16px;
+    }
+
+    .precio{
+        font-size: 16px;
+    }
+}
+
+
+.ad-left{
+position:fixed;
+bottom:20px;
+left:20px;
+z-index:9999;
+}
+
+.ad-right{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:9999;
+}
+
+
+
+/* ===== FORZAR TAMAÑO DEL LOGO ===== */
+
+/* ===== ARREGLAR HEADER ===== */
+
+/* NAVBAR */
+
+.menu{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1000px;
+margin:auto;
+padding:10px 20px;
+}
+
+/* LOGO */
+
+.logo img{
+width:80px;
+height:auto;
+}
+
+/* MENU */
+
+.navbar ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+/* CARRITO */
+
+.submenu{
+margin-left:20px;
+}
